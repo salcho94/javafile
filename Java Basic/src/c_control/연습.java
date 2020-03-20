@@ -1,20 +1,33 @@
 package c_control;
 
-public class 연습 {
+import java.util.Scanner;
 
+public class 연습 {
 	public static void main(String[] args) {
-			double []data=new double[5];
-			
-			data[0]=10.0;
-			data[1]=20.0;
-			data[2]=30.0;
-	
-			for(int i=0;i<data.length;i++) {
-				System.out.println(data[]);	
-			}
-			
+//         switch 연습
+		//층수를 입력받아서 출력해보자 
+		Scanner cs=new Scanner(System.in);
+		System.out.println("몇층으로 모실까용");		
+		int b=cs.nextInt();
+		
+
+		switch(b) {
+		case 1:System.out.println("약국");break;
+		case 2:System.out.println("정형외과 ");break;
+		case 3:System.out.println("피부과");break;
+		case 4:System.out.println("치과");break;
+		case 5:System.out.println("헬스장");break;
+		default:System.out.println("층수가 존재하지 않습니다");break;
+		}
+         
+		System.out.println(b+"층입니다");
 	}
-	
-	}
+
+}
+
+
+
+
+
 
 
